@@ -1,3 +1,17 @@
+#left-logo{
+  margin-top: 50px;
+  width: 200%;
+}
+
+.servicios{
+  margin-left: 75px;
+}
+
+.mini-elices {
+  padding-left: 100px;
+}
+
+
 .bg-custom-gradient {
     background: 
       linear-gradient(to right, rgba(11, 61, 145, 0.5), rgba(30, 144, 255, 0.5)),
