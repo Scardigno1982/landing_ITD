@@ -1,6 +1,15 @@
+body {
+  font-family: 'Montserrat', sans-serif; 
+}
+
+
 #left-logo{
   margin-top: 50px;
   width: 200%;
+}
+
+.azul{
+  color: #2C3E91;
 }
 
 .servicios{

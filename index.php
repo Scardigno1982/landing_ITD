@@ -17,6 +17,12 @@ if ($translations !== null) {
     <link href="src/css/style.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
 </head>
 <body class="bg-custom-gradient text-gray-800">
     <header>
@@ -150,12 +156,12 @@ if ($translations !== null) {
         <div class="grid grid-cols-1 md:grid-cols-4 gap-8"> 
             <div class="col-span-3 md:pr-8"> 
             <div class="flex items-center mb-4">
-                <div class="text-2xl font-bold">EnIT DEVELOPERS</div>
+                <div style="color: #2C3E91;" class="text-5xl font-bold">En IT DEVELOPERS</div>
             </div>
 
-            <div class="text-gray-700">
-                <h1 class="text-3xl font-semibold mb-2">Nos destacamos como su socio estratégico en el mundo de la consultoría SAP</h1>
-                <p>¿Por qué debería elegirnos? Porque estamos completamente alineados con las necesidades de su negocio. Entendemos que cada cliente es único, por lo que adaptamos nuestras soluciones a sus requerimientos específicos. Nuestro enfoque se centra en ofrecer prácticas innovadoras que proporcionan resultados excepcionales con un bajo mantenimiento. Con nosotros, obtendrá una combinación perfecta de experiencia, compromiso y excelencia en el servicio. Confían en nosotros para llevar su empresa al siguiente nivel en el mundo de SAP.</p>
+            <div class="">
+                <h1 style="color: #2C3E91;" class="text-3xl font-semibold mb-2">Nos destacamos como su socio estratégico en el mundo de la consultoría SAP</h1>
+                <p style="color: #2C3E91;" class="text-xl">¿Por qué debería elegirnos? Porque estamos completamente alineados con las necesidades de su negocio. Entendemos que cada cliente es único, por lo que adaptamos nuestras soluciones a sus requerimientos específicos. Nuestro enfoque se centra en ofrecer prácticas innovadoras que proporcionan resultados excepcionales con un bajo mantenimiento. Con nosotros, obtendrá una combinación perfecta de experiencia, compromiso y excelencia en el servicio. Confían en nosotros para llevar su empresa al siguiente nivel en el mundo de SAP.</p>
             </div>
             </div>
 
@@ -170,7 +176,7 @@ if ($translations !== null) {
 
         <section class=" p-8">
             <div class="container mx-auto text-center">
-                <h2 class="text-3xl font-bold mb-4 text-white">EMPRESAS QUE TRABAJAN CON NOSOTROS</h2>
+                <h2 class="text-5xl font-bold mb-4 text-white">EMPRESAS QUE TRABAJAN CON NOSOTROS</h2>
                 <div class="flex flex-wrap justify-center items-center mb-8 bg-white rounded-lg shadow-md">
                     <img src="src\img_webp\partner\partner4_webp_webp.webp" alt="Logo 2" class="w-24 m-2">
                 </div>
@@ -187,10 +193,11 @@ if ($translations !== null) {
                 <img src="src\img_webp\logo-itdeveloper.png" alt="mini-elices" class="w-25 h-auto">
             </div>
 
-            <div class="text-gray-700">
-
-                <p>Es una empresa con base en Estados Unidos fundada en 2019. Hoy día estamos en proceso de crecimiento con proyectos en USA y México. 
-                Nuestro negocio central está enfocado en el mercado de outsourcing de servicios de consultoría y desarrollo de soluciones. Somos una empresa con amplia experiencia en implementaciones de SAP BTP, SAP ERP, Seguridad SAP y SAP MII (Manufacturing Intelligence & Integration).</p>
+            <div>
+                <p style="color: #2C3E91;" class="text-xl">Es una empresa con base en Estados Unidos fundada en 2019. Hoy día estamos en proceso de crecimiento con proyectos en USA y México. 
+                Nuestro negocio central está enfocado en el mercado de outsourcing de servicios de consultoría y desarrollo de soluciones. 
+                Somos una empresa con amplia experiencia en implementaciones de SAP BTP, SAP ERP, Seguridad SAP y 
+                SAP MII (Manufacturing Intelligence & Integration).</p>
             </div>
             </div>
 
