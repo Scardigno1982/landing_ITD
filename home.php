@@ -24,7 +24,8 @@ if ($translations !== null) {
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
 
-
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 
 <body class="bg-custom-gradient text-gray-800">
@@ -163,56 +164,113 @@ if ($translations !== null) {
         </div>
 
         <div class="" id="collapse-technologies">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 py-4 px-2 md:px-4">
-                <div>
-                    <div class="inline-block text-white text-lg sm:text-xl md:text-3xl lg:text-3xl py-2 px-4 rounded mt-4"
-                        onclick="toggleVisibility('SAPDMC')">SAP DMC</div><br>
-                    <p id="SAPDMC" class="text-white text-base mt-4" style="display: none;">
-                        <?php echo $translations['SAPDMC']; ?>
-                    </p>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 py-4 px-2 md:px-4">
+        <div>
+        <div class="inline-block text-white text-lg sm:text-xl md:text-3xl lg:text-3xl py-2 px-4 rounded mt-4 flex items-center cursor-pointer"
+                onmouseover="showElement('SAPDMC')" onmouseout="hideElement('SAPDMC')" onclick="toggleVisibility('SAPDMC')">
+                SAP DMC
+                <svg id="icon-SAPDMC" class="w-6 h-6 ml-2 animate__animated" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+            </div><br>
+            <p id="SAPDMC" class="text-white text-base mt-4" style="display: none;">
+                <?php echo $translations['SAPDMC']; ?>
+            </p>
 
-                    <div class="inline-block text-white text-lg sm:text-xl md:text-3xl lg:text-3xl py-2 px-4 rounded mt-4"
-                        onclick="toggleVisibility('SAPMII')">SAP MII</div><br>
-                    <p id="SAPMII" class="text-white text-base mt-4" style="display: none;">
-                        <?php echo $translations['SAPMII']; ?>
-                    </p>
+            <div class="inline-block text-white text-lg sm:text-xl md:text-3xl lg:text-3xl py-2 px-4 rounded mt-4 flex items-center cursor-pointer"
+                onmouseover="showElement('SAPMII')" onmouseout="hideElement('SAPMII')" onclick="toggleVisibility('SAPMII')">
+                SAP MII
+                <svg id="icon-SAPMII" class="w-6 h-6 ml-2 animate__animated" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+            </div><br>
+            <p id="SAPMII" class="text-white text-base mt-4" style="display: none;">
+                <?php echo $translations['SAPMII']; ?>
+            </p>
 
-                    <div class="inline-block text-white text-lg sm:text-xl md:text-3xl lg:text-3xl py-2 px-4 rounded mt-4"
-                        onclick="toggleVisibility('SAPPCO')">SAP PCO</div><br>
-                    <p id="SAPPCO" class="text-white text-base mt-4" style="display: none;">
-                        <?php echo $translations['SAPPCO']; ?>
-                    </p>
+            <div class="inline-block text-white text-lg sm:text-xl md:text-3xl lg:text-3xl py-2 px-4 rounded mt-4 flex items-center cursor-pointer"
+                onmouseover="showElement('SAPPCO')" onmouseout="hideElement('SAPPCO')" onclick="toggleVisibility('SAPPCO')">
+                SAP PCO
+                <svg id="icon-SAPPCO" class="w-6 h-6 ml-2 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+            </div><br>
+            <p id="SAPPCO" class="text-white text-base mt-4" style="display: none;">
+                <?php echo $translations['SAPPCO']; ?>
+            </p>
 
-                    <div class="inline-block text-white text-lg sm:text-xl md:text-3xl lg:text-3xl py-2 px-4 rounded mt-4"
-                        onclick="toggleVisibility('SAPSecurity')">SAP Security</div><br>
-                    <p id="SAPSecurity" class="text-white text-base mt-4" style="display: none;">
-                        <?php echo $translations['SAPSecurity']; ?>
-                    </p>
+            <div class="inline-block text-white text-lg sm:text-xl md:text-3xl lg:text-3xl py-2 px-4 rounded mt-4 flex items-center cursor-pointer"
+                onmouseover="showElement('SAPSecurity')" onmouseout="hideElement('SAPSecurity')" onclick="toggleVisibility('SAPSecurity')">
+                SAP Security
+                <svg id="icon-SAPSecurity" class="w-6 h-6 ml-2 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+            </div><br>
+            <p id="SAPSecurity" class="text-white text-base mt-4" style="display: none;">
+                <?php echo $translations['SAPSecurity']; ?>
+            </p>
 
-                    <div class="inline-block text-white text-lg sm:text-xl md:text-3xl lg:text-3xl py-2 px-4 rounded mt-4"
-                        onclick="toggleVisibility('SAPBTP')">SAP BTP</div><br>
-                    <p id="SAPBTP" class="text-white text-base mt-4" style="display: none;">
-                        <?php echo $translations['SAPBTP']; ?>
-                    </p>
+            <div class="inline-block text-white text-lg sm:text-xl md:text-3xl lg:text-3xl py-2 px-4 rounded mt-4 flex items-center cursor-pointer"
+                onmouseover="showElement('SAPBTP')" onmouseout="hideElement('SAPBTP')" onclick="toggleVisibility('SAPBTP')">
+                SAP BTP
+                <svg id="icon-SAPBTP" class="w-6 h-6 ml-2 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+            </div><br>
+            <p id="SAPBTP" class="text-white text-base mt-4" style="display: none;">
+                <?php echo $translations['SAPBTP']; ?>
+            </p>
 
-                    <div class="inline-block text-white text-lg sm:text-xl md:text-3xl lg:text-3xl py-2 px-4 rounded mt-4"
-                        onclick="toggleVisibility('SAPBasis')">SAP Basis</div><br>
-                    <p id="SAPBasis" class="text-white text-base mt-4" style="display: none;">
-                        <?php echo $translations['SAPBasis']; ?>
-                    </p>
+            <div class="inline-block text-white text-lg sm:text-xl md:text-3xl lg:text-3xl py-2 px-4 rounded mt-4 flex items-center cursor-pointer"
+                onmouseover="showElement('SAPBasis')" onmouseout="hideElement('SAPBasis')" onclick="toggleVisibility('SAPBasis')">
+                SAP Basis
+                <svg id="icon-SAPBasis" class="w-6 h-6 ml-2 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+            </div><br>
+            <p id="SAPBasis" class="text-white text-base mt-4" style="display: none;">
+                <?php echo $translations['SAPBasis']; ?>
+            </p>
 
-                    <div class="inline-block text-white text-lg sm:text-xl md:text-3xl lg:text-3xl py-2 px-4 rounded mt-4"
-                        onclick="toggleVisibility('SAPIntegrationSuite')">SAP Integration Suite</div><br>
-                    <p id="SAPIntegrationSuite" class="text-white text-basemt-4" style="display: none;">
-                        <?php echo $translations['SAPIntegrationSuite']; ?>
-                    </p>
-                </div>
-                <div class="flex justify-end">
-                    <img src="src/img_webp/mini-hero.webp" alt="minihero"
-                        class="object-cover object-center w-full h-96">
-                </div>
-            </div>
+            <div class="inline-block text-white text-lg sm:text-xl md:text-3xl lg:text-3xl py-2 px-4 rounded mt-4 flex items-center cursor-pointer"
+                onmouseover="showElement('SAPIntegrationSuite')" onmouseout="hideElement('SAPIntegrationSuite')" onclick="toggleVisibility('SAPIntegrationSuite')">
+                SAP Integration Suite
+                <svg id="icon-SAPIntegrationSuite" class="w-6 h-6 ml-2 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+            </div><br>
+            <p id="SAPIntegrationSuite" class="text-white text-base mt-4" style="display: none;">
+                <?php echo $translations['SAPIntegrationSuite']; ?>
+            </p>
         </div>
+        <div class="flex justify-end">
+            <img src="src/img_webp/mini-hero.webp" alt="minihero"
+                class="object-cover object-center w-full h-96">
+        </div>
+    </div>
+</div>
+</div>
+</div>
+
+<script>
+function showElement(id) {
+    document.getElementById(id).style.display = 'block';
+}
+
+function hideElement(id) {
+    document.getElementById(id).style.display = 'none';
+}
+
+function toggleVisibility(id) {
+    const element = document.getElementById(id);
+    if (element.style.display === 'none') {
+        element.style.display = 'block';
+    } else {
+        element.style.display = 'none';
+    }
+}
+</script>
+
     </div>
 
 
@@ -373,6 +431,50 @@ if ($translations !== null) {
     echo "Translations not loaded.";
 }
 ?>
+
+<script>
+function showElement(id) {
+    document.getElementById(id).style.display = 'block';
+}
+
+function hideElement(id) {
+    document.getElementById(id).style.display = 'none';
+}
+
+function toggleVisibility(id) {
+    const element = document.getElementById(id);
+    const icon = document.getElementById('icon-' + id);
+    if (element.style.display === 'none') {
+        element.style.display = 'block';
+        icon.classList.add('animate__rotateIn');
+        icon.classList.remove('animate__rotateOut');
+    } else {
+        element.style.display = 'none';
+        icon.classList.add('animate__rotateOut');
+        icon.classList.remove('animate__rotateIn');
+    }
+}
+</script>
+
+<script>
+function showElement(id) {
+    document.getElementById(id).style.display = 'block';
+}
+
+function hideElement(id) {
+    document.getElementById(id).style.display = 'none';
+}
+
+function toggleVisibility(id) {
+    const element = document.getElementById(id);
+    if (element.style.display === 'none') {
+        element.style.display = 'block';
+    } else {
+        element.style.display = 'none';
+    }
+}
+</script>
+
     <script>
     //!SECTION TRASLATIONS
     function changeLanguage(lang) {
