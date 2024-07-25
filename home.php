@@ -1,6 +1,6 @@
 <?php
 session_start();
-require 'src/lang/main.php';
+require_once 'src/lang/main.php';
 
 $lang = isset($_SESSION['lang']) ? $_SESSION['lang'] : 'en';
 $translations = loadLanguage($lang);
@@ -26,9 +26,13 @@ if ($translations !== null) {
 
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
 </head>
 
 <body class="bg-custom-gradient text-gray-800">
+
+
+
     <header class="w-full">
         <!-- //ANCHOR - LOGO -->
         <div class="flex flex-col sm:flex-row justify-between items-center text-center sm:text-left">
@@ -38,21 +42,93 @@ if ($translations !== null) {
             </div>
         </div>
         <div class="mx-auto p-4">
-            <div class="flex justify-end items-center">
-                <a href="#" onclick="changeLanguage('en')"
-                    class="px-4 py-2 flex items-center <?php echo $lang == 'en' ? 'text-white' : 'text-white'; ?>">
-                    <span class="flag-icon flag-icon-us mr-2"></span> EN
-                </a>
-                <a href="#" onclick="changeLanguage('es')"
-                    class="px-4 py-2 flex items-center <?php echo $lang == 'es' ? 'text-white' : 'text-white'; ?>">
-                    <span class="flag-icon flag-icon-es mr-2"></span> ES
-                </a>
+
+            <!-- //ANCHOR - MENU -->
+
+
+            <!-- Botón de menú para móviles -->
+            <div class="contenedor-movil">
+                <div class="lg:hidden">
+                    <button id="menu-button" class="text-white focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </button>
+                </div>
             </div>
+
+            <!-- Menú de navegación (móvil) -->
+            <nav id="menu" class="hidden lg:hidden flex-col mt-4">
+                <ul class="flex flex-col space-y-2">
+                    <li><a href="#home"
+                            class="color-blanco hover:text-blue-600 font-semibold tracking-wide text-xl"><?php echo $translations['home']; ?></a>
+                    </li>
+                    <li><a href="#service"
+                            class="color-blanco hover:text-blue-600 font-semibold tracking-wide text-xl"><?php echo $translations['service']; ?></a>
+                    </li>
+                    <li><a href="#technologies"
+                            class="color-blanco hover:text-blue-600 font-semibold tracking-wide text-xl"><?php echo $translations['technologies']; ?></a>
+                    </li>
+                    <li><a href="#it-developers"
+                            class="color-blanco hover:text-blue-600 font-semibold tracking-wide text-xl"><?php echo $translations['it-developers']; ?></a>
+                    </li>
+                    <li><a href="#contact-menu"
+                            class="color-blanco hover:text-blue-600 font-semibold tracking-wide text-xl"><?php echo $translations['contact-menu']; ?></a>
+                    </li>
+                </ul>
+
+                <!-- Selector de idioma -->
+                <div class="flex space-x-4">
+                    <a href="#" onclick="changeLanguage('en')"
+                        class="px-4 py-2 flex items-center <?php echo $lang == 'en' ? 'text-white' : 'text-white'; ?>">
+                        <span class="flag-icon flag-icon-us mr-2"></span> EN
+                    </a>
+                    <a href="#" onclick="changeLanguage('es')"
+                        class="px-4 py-2 flex items-center <?php echo $lang == 'es' ? 'text-white' : 'text-white'; ?>">
+                        <span class="flag-icon flag-icon-es mr-2"></span> ES
+                    </a>
+                </div>
+            </nav>
+
+
+            <!-- Menú de navegación (escritorio) -->
+            <nav class="menu-desktop hidden lg:flex justify-between items-center px-4 w-full">
+                <!-- Enlaces de navegación -->
+                <div class="flex space-x-6">
+                    <a href="#home" class="color-blanco hover:text-blue-600 font-semibold tracking-wide text-xl">
+                        <?php echo $translations['home']; ?></a>
+                    <a href="#service"
+                        class="color-blanco hover:text-blue-600 font-semibold tracking-wide text-xl"><?php echo $translations['service']; ?></a>
+                    <a href="#technologies"
+                        class="color-blanco hover:text-blue-600 font-semibold tracking-wide text-xl"><?php echo $translations['technologies']; ?></a>
+                    <a href="#it-developers"
+                        class="color-blanco hover:text-blue-600 font-semibold tracking-wide text-xl"><?php echo $translations['it-developers']; ?></a>
+                    <a href="#contact-menu"
+                        class="color-blanco hover:text-blue-600 font-semibold tracking-wide text-xl"><?php echo $translations['contact-menu']; ?></a>
+                </div>
+
+                <!-- Selector de idioma -->
+                <div class="flex space-x-4">
+                    <a href="#" onclick="changeLanguage('en')"
+                        class="px-4 py-2 flex items-center <?php echo $lang == 'en' ? 'text-white' : 'text-white'; ?>">
+                        <span class="flag-icon flag-icon-us mr-2"></span> EN
+                    </a>
+                    <a href="#" onclick="changeLanguage('es')"
+                        class="px-4 py-2 flex items-center <?php echo $lang == 'es' ? 'text-white' : 'text-white'; ?>">
+                        <span class="flag-icon flag-icon-es mr-2"></span> ES
+                    </a>
+                </div>
+            </nav>
+
+
         </div>
     </header>
 
 
     <!-- //ANCHOR - HERO -->
+    <div id="home"></div>
     <div class="w-full bg-cover bg-center h-1/2 slider-hero" style="background-image: url('src/img_webp/slider.webp');">
         <div class="flex items-center justify-center h-full bg-black bg-opacity-20">
             <div class="text-center text-white px-2 sm:px-4 md:px-6 lg:px-8 xl:px-12">
@@ -75,21 +151,25 @@ if ($translations !== null) {
             <div>
                 <img src="src/img_webp/icon1.webp" alt="Clientes"
                     class="w-16 sm:w-20 md:w-24 lg:w-28 mx-auto mb-2 sm:mb-4">
+                <p class="number" data-target="20" class="text-lg sm:text-xl md:text-2xl">+0</p>
                 <p id="icon1-text" class="text-lg sm:text-xl md:text-2xl"><?php echo $translations['icon1']; ?></p>
             </div>
             <div>
                 <img src="src/img_webp/icon2.webp" alt="Proyectos"
                     class="w-16 sm:w-20 md:w-24 lg:w-28 mx-auto mb-2 sm:mb-4">
+                <p class="number" data-target="50" class="text-lg sm:text-xl md:text-2xl">+0</p>
                 <p id="icon2-text" class="text-lg sm:text-xl md:text-2xl"><?php echo $translations['icon2']; ?></p>
             </div>
             <div>
                 <img src="src/img_webp/icon3.webp" alt="Países"
                     class="w-16 sm:w-20 md:w-24 lg:w-28 mx-auto mb-2 sm:mb-4">
+                <p class="number" data-target="10" class="text-lg sm:text-xl md:text-2xl">+0</p>
                 <p id="icon3-text" class="text-lg sm:text-xl md:text-2xl"><?php echo $translations['icon3']; ?></p>
             </div>
             <div>
                 <img src="src/img_webp/icon4.webp" alt="Experiencia"
                     class="w-16 sm:w-20 md:w-24 lg:w-28 mx-auto mb-2 sm:mb-4">
+                <p class="number" data-target="18" class="text-lg sm:text-xl md:text-2xl">+0</p>
                 <p id="icon4-text" class="text-lg sm:text-xl md:text-2xl"><?php echo $translations['icon4']; ?></p>
             </div>
         </div>
@@ -97,6 +177,7 @@ if ($translations !== null) {
 
 
     <!-- //ANCHOR - SERVICE -->
+    <div id="service-container"></div>
     <div class="w-full servicios mx-auto px-4 py-6 md:py-10">
         <button class="text-white font-bold py-2 px-4 rounded" type="button" data-collapse-toggle="collapse-servicios">
             <span id="service" class="flex items-center justify-center">
@@ -146,6 +227,7 @@ if ($translations !== null) {
     </div>
 
     <!-- //ANCHOR - TECNOLOGIA -->
+    <div id="technologies"></div>
     <div class="w-full servicios mx-auto px-4 py-6 md:py-10">
         <div class="flex items-center space-x-2">
             <button class="text-white font-bold py-2 px-4 rounded" type="button"
@@ -296,6 +378,7 @@ if ($translations !== null) {
 
 
     <!-- //ANCHOR - TEXTO IMAGEN -->
+    <div id="it-developers"></div>
     <div class="w-full p-6 md:p-20">
         <div class="p-4 md:p-8 mx-auto bg-white rounded-lg shadow-md mt-6">
             <div class="grid grid-cols-12 gap-4 md:gap-8">
@@ -378,6 +461,7 @@ if ($translations !== null) {
 
 
     <!-- //ANCHOR - CONTACTO -->
+    <div id="contact-menu"></div>
     <div class="w-full py-6 md:py-10 px-4 md:px-10 mx-auto mt-6">
         <div class="grid grid-cols-1 md:grid-cols-10 gap-4 md:gap-8">
             <div class="col-span-1 md:col-span-6 md:pr-8 text-white">
@@ -435,11 +519,10 @@ if ($translations !== null) {
             <img src="src\img_webp\logo-footer.webp" alt="Logo" class="h-auto" width="120">
         </div>
         <div class="flex items-center">
-            <img src="src\img_webp\linkedin.webp" alt="Logo" class="w-auto h-auto">
+            <a href="https://www.linkedin.com/company/it-developers-main/" target="_blank">
+                <img src="src\img_webp\linkedin.webp" alt="Logo" class="w-auto h-auto"></a>
         </div>
     </div>
-
-
 
 
 
@@ -455,114 +538,8 @@ if ($translations !== null) {
 }
 ?>
 
-    <script>
-    function showElement(id) {
-        document.getElementById(id).style.display = 'block';
-    }
+    <script src="src\js\main.js"></script>
 
-    function hideElement(id) {
-        document.getElementById(id).style.display = 'none';
-    }
-
-    function toggleVisibility(id) {
-        const element = document.getElementById(id);
-        const icon = document.getElementById('icon-' + id);
-        if (element.style.display === 'none') {
-            element.style.display = 'block';
-            icon.classList.add('animate__rotateIn');
-            icon.classList.remove('animate__rotateOut');
-        } else {
-            element.style.display = 'none';
-            icon.classList.add('animate__rotateOut');
-            icon.classList.remove('animate__rotateIn');
-        }
-    }
-    </script>
-
-    <script>
-    function showElement(id) {
-        document.getElementById(id).style.display = 'block';
-    }
-
-    function hideElement(id) {
-        document.getElementById(id).style.display = 'none';
-    }
-
-    function toggleVisibility(id) {
-        const element = document.getElementById(id);
-        if (element.style.display === 'none') {
-            element.style.display = 'block';
-        } else {
-            element.style.display = 'none';
-        }
-    }
-    </script>
-
-    <script>
-    //!SECTION TRASLATIONS
-    function changeLanguage(lang) {
-        fetch(`src/lang/get_translations.php?lang=${lang}`)
-            .then(response => response.json())
-            .then(translations => {
-                document.getElementById('hero-text').innerHTML = translations['hero'] +
-                    '<img src="src/img_webp/logo-zap.webp" alt="ZAP Logo" class="inline-block w-30 h-auto mx-2">' +
-                    translations['hero-next'];
-                document.getElementById('icon1-text').innerText = translations['icon1'];
-                document.getElementById('icon2-text').innerText = translations['icon2'];
-                document.getElementById('icon3-text').innerText = translations['icon3'];
-                document.getElementById('icon4-text').innerText = translations['icon4'];
-                document.getElementById('service').innerText = translations['service'];
-
-                document.getElementById('service-subtitulo').innerText = translations['service-subtitulo'];
-                document.getElementById('service-subtitulo-descripcion').innerText = translations[
-                    'service-subtitulo-descripcion'];
-
-
-                document.getElementById('technologies').innerText = translations['technologies'];
-                document.getElementById('SAPDMC').innerText = translations['SAPDMC'];
-                document.getElementById('SAPMII').innerText = translations['SAPMII'];
-                document.getElementById('SAPPCO').innerText = translations['SAPPCO'];
-                document.getElementById('SAPSecurity').innerText = translations['SAPSecurity'];
-                document.getElementById('SAPBTP').innerText = translations['SAPBTP'];
-                document.getElementById('SAPBasis').innerText = translations['SAPBasis'];
-                document.getElementById('SAPIntegrationSuite').innerHTML = translations['SAPIntegrationSuite'];
-
-                // Actualizar la variable de sesión
-                fetch(`src/lang/get_translations.php?lang=${lang}`)
-                    .then(response => {
-                        if (response.ok) {
-                            return response.text();
-                        }
-                        throw new Error('Network response was not ok.');
-                    })
-                    .then(() => {
-                        window.location.reload(); // Recargar la página para aplicar el cambio de idioma
-                    })
-                    .catch(error => {
-                        console.error('Error updating language:', error);
-                    });
-            });
-    }
-
-    function toggleVisibility(id) {
-        const collapseContent = document.getElementById(id);
-        if (collapseContent.style.display === "none" || collapseContent.style.display === "") {
-            collapseContent.style.display = "block";
-        } else {
-            collapseContent.style.display = "none";
-        }
-    }
-
-    const buttons = document.querySelectorAll('[data-collapse-toggle]');
-
-    buttons.forEach(button => {
-        button.addEventListener('click', () => {
-            const id = button.getAttribute('data-collapse-toggle');
-            const content = document.getElementById(id);
-            content.classList.toggle('hidden');
-        });
-    });
-    </script>
 </body>
 
 </html>

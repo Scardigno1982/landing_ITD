@@ -1,13 +1,20 @@
 <?php
 // lang/es.php
 return [
+    'home' => 'INICIO',
+    'service' => 'SERVICIO',
+    'technologies' => 'TECNOLOGIA',
+    'it-developers' => 'IT DEVELOPERS',
+    'contact-menu' => 'CONTACTO',
+
+
     'hero' => 'Su socio de soluciones',
     'hero-next'=>'para el exito',
-    'icon1'=>'+20 CLIENTES',
-    'icon2'=>'+50 PROYECTOS',
-    'icon3'=>'+10 PAÍSES',
-    'icon4'=>'+18 AÑOS DE EXPERIENCIA',
-    'service'=>'SERVICIOS',
+    'icon1'=>'CLIENTES',
+    'icon2'=>'PROYECTOS',
+    'icon3'=>'PAÍSES',
+    'icon4'=>'AÑOS DE EXPERIENCIA',
+    'service-container'=>'SERVICIOS',
     'service-subtitulo'=>'Consultoría de  Arquitectura SAP:',
     'service-subtitulo-descripcion'=>'Ofrecemos asesoramiento especializado en el diseño y la estructura de sistemas SAP, asegurando una arquitectura sólida y eficiente que cumpla con los objetivos y requisitos del negocio.',
     'service-subtitulo1'=>'Consultoría SAP PP:',

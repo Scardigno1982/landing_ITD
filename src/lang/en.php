@@ -1,13 +1,19 @@
 <?php
 // lang/en.php
 return [
+    'home' => 'HOME',
+    'service' => 'SERVICE',
+    'technologies' => 'TECNOLOGIES',
+    'it-developers' => 'IT DEVELOPERS',
+    'contact-menu' => 'CONTACT',
+
     'hero' => 'Your Solution Partner',
     'hero-next'=>'for success',
-    'icon1'=>'+20 CLIENTS',
-    'icon2'=>'+50 PROJECTS',
-    'icon3'=>'+10 COUNTRIES',
-    'icon4'=>'+18 YEARS OF EXPERIENCE',
-    'service'=>'SERVICE',
+    'icon1'=>'CLIENTS',
+    'icon2'=>'PROJECTS',
+    'icon3'=>'COUNTRIES',
+    'icon4'=>'YEARS OF EXPERIENCE',
+    'service-container'=>'SERVICE',
     'service-subtitulo'=>'Consulting SAP Architecture:',
     'service-subtitulo-descripcion'=>'We offer specialist advice on the design and production of SAP system structure, ensuring a solid and efficient architecture that meets the requirements of the business objectives and requirements.',                     
     'service-subtitulo1'=>'SAP Consulting PP:',

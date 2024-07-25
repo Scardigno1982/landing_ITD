@@ -3,6 +3,10 @@ html {
     height: 100%;
 }
 
+.color-blanco {
+    color: white;
+}
+
 .hero-text {
     background-color: (56, 205, 231, 0.8);
 }
@@ -71,12 +75,12 @@ body {
     height: 100vh;
 }
 
-#mini-elices {
+/* #mini-elices {
     margin-left: 75px;
 }
 #manos {
     margin-left: 75px;
-}
+} */
 
 /* Media query para pantallas pequeñas */
 @media (max-width: 767px) and (min-width: 100px) {
