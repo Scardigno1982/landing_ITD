@@ -71,7 +71,7 @@ if ($translations !== null) {
                     <li><a href="#technologies"
                             class="color-blanco hover:text-blue-600 font-semibold tracking-wide text-xl"><?php echo $translations['technologies']; ?></a>
                     </li>
-                    <li><a href="#it-developers"
+                    <li><a href="#about-us"
                             class="color-blanco hover:text-blue-600 font-semibold tracking-wide text-xl"><?php echo $translations['it-developers']; ?></a>
                     </li>
                     <li><a href="#contact-menu"
@@ -103,7 +103,7 @@ if ($translations !== null) {
                         class="color-blanco hover:text-blue-600 font-semibold tracking-wide text-xl"><?php echo $translations['service']; ?></a>
                     <a href="#technologies"
                         class="color-blanco hover:text-blue-600 font-semibold tracking-wide text-xl"><?php echo $translations['technologies']; ?></a>
-                    <a href="#it-developers"
+                    <a href="#about-us"
                         class="color-blanco hover:text-blue-600 font-semibold tracking-wide text-xl"><?php echo $translations['it-developers']; ?></a>
                     <a href="#contact-menu"
                         class="color-blanco hover:text-blue-600 font-semibold tracking-wide text-xl"><?php echo $translations['contact-menu']; ?></a>
@@ -179,28 +179,24 @@ if ($translations !== null) {
     <!-- //ANCHOR - SERVICE -->
     <div id="service-container"></div>
     <div class="w-full servicios mx-auto px-4 py-6 md:py-10">
-        <button class="text-white font-bold py-2 px-4 rounded" type="button" data-collapse-toggle="collapse-servicios">
+        <button class="text-white font-bold py-2 px-4 rounded">
             <span id="service" class="flex items-center justify-center">
                 <h2
                     class="text-lg sm:text-xl md:text-3xl lg:text-5xl font-bold font-bold mb-4 inline-flex items-center">
                     <?php echo $translations['service']; ?>
                 </h2>
-                <svg class="w-6 h-6 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                </svg>
             </span>
         </button>
 
 
         <div class="" id="collapse-servicios">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 py-4 px-2 md:px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10 py-4 px-2 md:px-4">
                 <div>
                     <div id="service-subtitulo"
                         class="inline-block bg-sky-400 text-white font-bold py-2 px-4 rounded mt-4">
                         <?php echo $translations['service-subtitulo']; ?>
                     </div>
-                    <p id="service-subtitulo-descripcion" class="text-white text-base sm:text-lg">
+                    <p id="service-subtitulo-descripcion" class="text-white text-base sm:text-lg mb-5">
                         <?php echo $translations['service-subtitulo-descripcion']; ?>
                     </p>
 
@@ -209,7 +205,7 @@ if ($translations !== null) {
                         <?php echo $translations['service-subtitulo1']; ?>
 
                     </div>
-                    <p id="service-subtitulo-descripcion1" class="text-white text-base sm:text-lg">
+                    <p id="service-subtitulo-descripcion1" class="text-white text-base sm:text-lg mb-5">
                         <?php echo $translations['service-subtitulo-descripcion1']; ?>
                     </p>
 
@@ -217,7 +213,7 @@ if ($translations !== null) {
                         class="inline-block bg-sky-400 text-white font-bold py-2 px-4 rounded mt-4">
                         <?php echo $translations['service-subtitulo2']; ?>
                     </div>
-                    <p id="service-subtitulo-descripcion2" class="text-white text-base sm:text-lg">
+                    <p id="service-subtitulo-descripcion2" class="text-white text-base sm:text-lg mb-5">
                         <?php echo $translations['service-subtitulo-descripcion2']; ?>
                     </p>
                 </div>
@@ -230,16 +226,11 @@ if ($translations !== null) {
     <div id="technologies"></div>
     <div class="w-full servicios mx-auto px-4 py-6 md:py-10">
         <div class="flex items-center space-x-2">
-            <button class="text-white font-bold py-2 px-4 rounded" type="button"
-                data-collapse-toggle="collapse-technologies">
+            <button class="text-white font-bold py-2 px-4 rounded">
                 <span id="technologies" class="flex items-center justify-center">
                     <h2 class="text-lg sm:text-xl md:text-3xl lg:text-5xl font-bold mb-4 inline-flex items-center">
                         <?php echo $translations['technologies']; ?>
                     </h2>
-                    <svg class="w-6 h-6 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                    </svg>
                 </span>
             </button>
             <img src="src/img_webp/logo-zap.webp" alt="sap" class="w-20" style="margin-top: -20px;">
@@ -249,7 +240,6 @@ if ($translations !== null) {
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4 py-4 px-2 md:px-4">
                 <div>
                     <div class="inline-block text-white text-lg sm:text-xl md:text-3xl lg:text-3xl py-2 px-4 rounded mt-4 flex items-center cursor-pointer"
-                        onmouseover="showElement('SAPDMC')" onmouseout="hideElement('SAPDMC')"
                         onclick="toggleVisibility('SAPDMC')">
                         SAP DMC
                         <svg id="icon-SAPDMC" class="w-6 h-6 ml-2 animate__animated" fill="none" stroke="currentColor"
@@ -257,13 +247,12 @@ if ($translations !== null) {
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
                             </path>
                         </svg>
-                    </div><br>
-                    <p id="SAPDMC" class="text-white text-base mt-4" style="display: none;">
+                    </div>
+                    <p id="SAPDMC" class="text-white text-base mt-2 px-10" style="display: none;">
                         <?php echo $translations['SAPDMC']; ?>
                     </p>
 
                     <div class="inline-block text-white text-lg sm:text-xl md:text-3xl lg:text-3xl py-2 px-4 rounded mt-4 flex items-center cursor-pointer"
-                        onmouseover="showElement('SAPMII')" onmouseout="hideElement('SAPMII')"
                         onclick="toggleVisibility('SAPMII')">
                         SAP MII
                         <svg id="icon-SAPMII" class="w-6 h-6 ml-2 animate__animated" fill="none" stroke="currentColor"
@@ -271,13 +260,12 @@ if ($translations !== null) {
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
                             </path>
                         </svg>
-                    </div><br>
-                    <p id="SAPMII" class="text-white text-base mt-4" style="display: none;">
+                    </div>
+                    <p id="SAPMII" class="text-white text-base mt-2 px-10" style="display: none;">
                         <?php echo $translations['SAPMII']; ?>
                     </p>
 
                     <div class="inline-block text-white text-lg sm:text-xl md:text-3xl lg:text-3xl py-2 px-4 rounded mt-4 flex items-center cursor-pointer"
-                        onmouseover="showElement('SAPPCO')" onmouseout="hideElement('SAPPCO')"
                         onclick="toggleVisibility('SAPPCO')">
                         SAP PCO
                         <svg id="icon-SAPPCO" class="w-6 h-6 ml-2 transition-transform duration-300" fill="none"
@@ -285,13 +273,12 @@ if ($translations !== null) {
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
                             </path>
                         </svg>
-                    </div><br>
-                    <p id="SAPPCO" class="text-white text-base mt-4" style="display: none;">
+                    </div>
+                    <p id="SAPPCO" class="text-white text-base mt-2 px-10" style="display: none;">
                         <?php echo $translations['SAPPCO']; ?>
                     </p>
 
                     <div class="inline-block text-white text-lg sm:text-xl md:text-3xl lg:text-3xl py-2 px-4 rounded mt-4 flex items-center cursor-pointer"
-                        onmouseover="showElement('SAPSecurity')" onmouseout="hideElement('SAPSecurity')"
                         onclick="toggleVisibility('SAPSecurity')">
                         SAP Security
                         <svg id="icon-SAPSecurity" class="w-6 h-6 ml-2 transition-transform duration-300" fill="none"
@@ -299,13 +286,12 @@ if ($translations !== null) {
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
                             </path>
                         </svg>
-                    </div><br>
-                    <p id="SAPSecurity" class="text-white text-base mt-4" style="display: none;">
+                    </div>
+                    <p id="SAPSecurity" class="text-white text-base mt-2 px-10" style="display: none;">
                         <?php echo $translations['SAPSecurity']; ?>
                     </p>
 
                     <div class="inline-block text-white text-lg sm:text-xl md:text-3xl lg:text-3xl py-2 px-4 rounded mt-4 flex items-center cursor-pointer"
-                        onmouseover="showElement('SAPBTP')" onmouseout="hideElement('SAPBTP')"
                         onclick="toggleVisibility('SAPBTP')">
                         SAP BTP
                         <svg id="icon-SAPBTP" class="w-6 h-6 ml-2 transition-transform duration-300" fill="none"
@@ -313,13 +299,12 @@ if ($translations !== null) {
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
                             </path>
                         </svg>
-                    </div><br>
-                    <p id="SAPBTP" class="text-white text-base mt-4" style="display: none;">
+                    </div>
+                    <p id="SAPBTP" class="text-white text-base mt-2 px-10" style="display: none;">
                         <?php echo $translations['SAPBTP']; ?>
                     </p>
 
                     <div class="inline-block text-white text-lg sm:text-xl md:text-3xl lg:text-3xl py-2 px-4 rounded mt-4 flex items-center cursor-pointer"
-                        onmouseover="showElement('SAPBasis')" onmouseout="hideElement('SAPBasis')"
                         onclick="toggleVisibility('SAPBasis')">
                         SAP Basis
                         <svg id="icon-SAPBasis" class="w-6 h-6 ml-2 transition-transform duration-300" fill="none"
@@ -327,13 +312,12 @@ if ($translations !== null) {
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
                             </path>
                         </svg>
-                    </div><br>
-                    <p id="SAPBasis" class="text-white text-base mt-4" style="display: none;">
+                    </div>
+                    <p id="SAPBasis" class="text-white text-base mt-2 px-10" style="display: none;">
                         <?php echo $translations['SAPBasis']; ?>
                     </p>
 
                     <div class="inline-block text-white text-lg sm:text-xl md:text-3xl lg:text-3xl py-2 px-4 rounded mt-4 flex items-center cursor-pointer"
-                        onmouseover="showElement('SAPIntegrationSuite')" onmouseout="hideElement('SAPIntegrationSuite')"
                         onclick="toggleVisibility('SAPIntegrationSuite')">
                         SAP Integration Suite
                         <svg id="icon-SAPIntegrationSuite" class="w-6 h-6 ml-2 transition-transform duration-300"
@@ -341,8 +325,8 @@ if ($translations !== null) {
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
                             </path>
                         </svg>
-                    </div><br>
-                    <p id="SAPIntegrationSuite" class="text-white text-base mt-4" style="display: none;">
+                    </div>
+                    <p id="SAPIntegrationSuite" class="text-white text-base mt-2 px-10" style="display: none;">
                         <?php echo $translations['SAPIntegrationSuite']; ?>
                     </p>
                 </div>
@@ -353,28 +337,7 @@ if ($translations !== null) {
             </div>
         </div>
     </div>
-    </div>
 
-    <script>
-    function showElement(id) {
-        document.getElementById(id).style.display = 'block';
-    }
-
-    function hideElement(id) {
-        document.getElementById(id).style.display = 'none';
-    }
-
-    function toggleVisibility(id) {
-        const element = document.getElementById(id);
-        if (element.style.display === 'none') {
-            element.style.display = 'block';
-        } else {
-            element.style.display = 'none';
-        }
-    }
-    </script>
-
-    </div>
 
 
     <!-- //ANCHOR - TEXTO IMAGEN -->
@@ -430,9 +393,20 @@ if ($translations !== null) {
 
 
     <!-- //ANCHOR - TEXTO IMAGEN -->
+    <div class="w-full servicios mx-auto px-4">
+        <button class="text-white font-bold px-4 rounded" type="button" data-collapse-toggle="collapse-servicios">
+            <span id="about-us" class="flex items-center justify-center">
+                <h2
+                    class="text-lg sm:text-xl md:text-3xl lg:text-5xl font-bold font-bold mb-4 inline-flex items-center">
+                    <?php echo $translations['about-us']; ?>
+                </h2>
+            </span>
+        </button>
+    </div>
+
 
     <div class="w-full p-6 md:p-20">
-        <div class="p-4 md:p-8 mx-auto bg-white rounded-lg shadow-md mt-6">
+        <div class="p-4 md:p-8 mx-auto bg-white rounded-lg shadow-md">
             <div class="grid grid-cols-12 gap-4 md:gap-8">
                 <div class="col-span-12 md:col-span-7">
                     <div class="flex items-center mb-4">

@@ -30,17 +30,16 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // Función para mostrar un elemento por su id.
-function showElement(id) {
-    document.getElementById(id).style.display = 'block';
-}
-
-// Función para ocultar un elemento por su id.
-function hideElement(id) {
-    document.getElementById(id).style.display = 'none';
-}
-
-// Función para alternar la visibilidad de un elemento por su id.
 function toggleVisibility(id) {
+    const container = document.getElementById('collapse-technologies');
+    const paragraphs = container.querySelectorAll('p[id]');
+
+    paragraphs.forEach((paragraph) => {
+        if (paragraph.id !== id) {
+            paragraph.style.display = 'none';
+        }
+    });
+
     const element = document.getElementById(id);
     if (element.style.display === 'none' || element.style.display === '') {
         element.style.display = 'block';
@@ -48,7 +47,6 @@ function toggleVisibility(id) {
         element.style.display = 'none';
     }
 }
-
 // Función para cambiar el idioma de la página y actualizar los textos.
 function changeLanguage(lang) {
     fetch(`src/lang/get_translations.php?lang=${lang}`)

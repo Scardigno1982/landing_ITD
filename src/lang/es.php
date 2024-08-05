@@ -4,7 +4,7 @@ return [
     'home' => 'INICIO',
     'service' => 'SERVICIO',
     'technologies' => 'TECNOLOGIA',
-    'it-developers' => 'IT DEVELOPERS',
+    'it-developers' => 'SOBRE NOSOTROS',
     'contact-menu' => 'CONTACTO',
 
 
@@ -32,6 +32,9 @@ return [
     'in'=>'En',
     'developers'=>'destacamos como su socio estratégico en el mundo de la consultoría',
     'what'=>'¿Por qué debería elegirnos?',
+    
+    'about-us'=>'SOBRE NOSOTROS',
+
     'ask'=>'Porque estamos completamente alineados con las necesidades de su negocio. Entendemos que cada cliente es único, por lo que adaptamos nuestras soluciones a sus requerimientos específicos. Nuestro enfoque se centra en ofrecer prácticas innovadoras que proporcionan resultados excepcionales con un bajo mantenimiento. Con nosotros, obtendrá una combinación perfecta de experiencia, compromiso y excelencia en el servicio. Confían en para llevar su empresa al siguiente nivel en el mundo de',
     'partner'=>'EMPRESAS QUE TRABAJAN CON NOSOTROS',
     'businnes'=>'Es una empresa con base en Estados Unidos fundada en 2019. Hoy día estamos en proceso de crecimiento con proyectos en USA y México. Nuestro negocio central está enfocado en el mercado de',

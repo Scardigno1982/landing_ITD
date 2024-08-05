@@ -4,7 +4,7 @@ return [
     'home' => 'HOME',
     'service' => 'SERVICE',
     'technologies' => 'TECNOLOGIES',
-    'it-developers' => 'IT DEVELOPERS',
+    'it-developers' => 'ABOUT US',
     'contact-menu' => 'CONTACT',
 
     'hero' => 'Your Solution Partner',
@@ -31,6 +31,7 @@ return [
     'in'=>'In',
     'developers'=>'We stand out as your strategic partner in the world of consulting',
     'what'=>'Why should you choose us?',
+    'about-us'=>'ABOUT US',
     'ask'=>'Because we are completely aligned with the needs of your business. We understand that each client is unique, so we adapt our solutions to your needs. specific wants. Our approach is focuses on offering innovative practices that provide exceptional results with low maintenance. With us, you will get a perfect combination nation of experience, commitment and excellence in service. They trust to take your business to the next level in the world of',
     'partner'=>'COMPANIES THAT WORK WITH US',
     'businnes'=>'It is a company based in the United States founded in 2019. Today we are in the process of growth with projects in the USA and Mexico. Our core business is focused on market of',
