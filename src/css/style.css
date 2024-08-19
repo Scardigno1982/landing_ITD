@@ -46,6 +46,10 @@ body {
   margin-left: 75px;
 } */
 
+.number {
+    font-size: 40px;
+}
+
 .bg-custom-gradient {
     background: linear-gradient(
             to right,
@@ -90,4 +94,36 @@ body {
     #manos {
         margin-left: 0px;
     }
+}
+
+/* Style the navbar */
+#menu {
+    overflow: hidden;
+    background-color: #333;
+}
+
+#header {
+    background: linear-gradient(
+            to right,
+            rgba(11, 61, 145, 0.5),
+            rgba(30, 144, 255, 0.5)
+        ),
+        linear-gradient(
+            to right,
+            #0b3d91,
+            #0b3d91,
+            transparent,
+            transparent,
+            #add8e6,
+            #add8e6,
+            transparent,
+            transparent,
+            #0b3d91,
+            #0b3d91
+        ),
+        linear-gradient(
+            to right,
+            rgba(11, 61, 145, 0.5),
+            rgba(30, 144, 255, 0.5)
+        );
 }

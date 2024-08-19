@@ -33,7 +33,7 @@ if ($translations !== null) {
 
 
 
-    <header class="w-full">
+    <header id="header" class="w-full fixed top-0 left-0 z-50">
         <!-- //ANCHOR - LOGO -->
         <div class="flex flex-col sm:flex-row justify-between items-center text-center sm:text-left">
             <div class="w-full sm:w-auto">
@@ -128,7 +128,7 @@ if ($translations !== null) {
 
 
     <!-- //ANCHOR - HERO -->
-    <div id="home"></div>
+    <div id="home" class="" style="margin-top: 174px;"></div>
     <div class="w-full bg-cover bg-center h-1/2 slider-hero" style="background-image: url('src/img_webp/slider.webp');">
         <div class="flex items-center justify-center h-full bg-black bg-opacity-20">
             <div class="text-center text-white px-2 sm:px-4 md:px-6 lg:px-8 xl:px-12">
@@ -151,7 +151,7 @@ if ($translations !== null) {
             <div>
                 <img src="src/img_webp/icon1.webp" alt="Clientes"
                     class="w-16 sm:w-20 md:w-24 lg:w-28 mx-auto mb-2 sm:mb-4">
-                <p class="number" data-target="20" class="text-lg sm:text-xl md:text-2xl">+0</p>
+                <p class="number" data-target="20" class="text-lg sm:text-xl md:text-xl">+0</p>
                 <p id="icon1-text" class="text-lg sm:text-xl md:text-2xl"><?php echo $translations['icon1']; ?></p>
             </div>
             <div>
@@ -178,11 +178,10 @@ if ($translations !== null) {
 
     <!-- //ANCHOR - SERVICE -->
     <div id="service-container"></div>
-    <div class="w-full servicios mx-auto px-4 py-6 md:py-10">
+    <div class="w-full servicios mx-auto px-4 py-2 md:py-4">
         <button class="text-white font-bold py-2 px-4 rounded">
             <span id="service" class="flex items-center justify-center">
-                <h2
-                    class="text-lg sm:text-xl md:text-3xl lg:text-5xl font-bold font-bold mb-4 inline-flex items-center">
+                <h2 class="text-3xl sm:text-3xl md:text-3xl lg:text-5xl font-bold mb-4 inline-flex items-center">
                     <?php echo $translations['service']; ?>
                 </h2>
             </span>
@@ -190,8 +189,8 @@ if ($translations !== null) {
 
 
         <div class="" id="collapse-servicios">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10 py-4 px-2 md:px-4">
-                <div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10 py-2 px-2 md:px-4">
+                <div style="margin-bottom: -50px;">
                     <div id="service-subtitulo"
                         class="inline-block bg-sky-400 text-white font-bold py-2 px-4 rounded mt-4">
                         <?php echo $translations['service-subtitulo']; ?>
@@ -217,18 +216,26 @@ if ($translations !== null) {
                         <?php echo $translations['service-subtitulo-descripcion2']; ?>
                     </p>
                 </div>
-                <div></div>
+
+                <!-- Contenedor para la imagen -->
+                <div class="flex justify-end">
+                    <div class="lg:mt-6 md:mt-0 mt-5">
+                        <img src="src/img_webp/hand.webp" alt="hand" class="lg:w-full rounded mt-3">
+                    </div>
+                </div>
+
+
             </div>
         </div>
     </div>
 
     <!-- //ANCHOR - TECNOLOGIA -->
     <div id="technologies"></div>
-    <div class="w-full servicios mx-auto px-4 py-6 md:py-10">
+    <div class="w-full mx-auto px-4 py-6 md:py-10">
         <div class="flex items-center space-x-2">
             <button class="text-white font-bold py-2 px-4 rounded">
                 <span id="technologies" class="flex items-center justify-center">
-                    <h2 class="text-lg sm:text-xl md:text-3xl lg:text-5xl font-bold mb-4 inline-flex items-center">
+                    <h2 class="text-3xl sm:text-3xl md:text-3xl lg:text-5xl font-bold mb-4 inline-flex items-center">
                         <?php echo $translations['technologies']; ?>
                     </h2>
                 </span>
@@ -239,7 +246,7 @@ if ($translations !== null) {
         <div class="" id="collapse-technologies">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4 py-4 px-2 md:px-4">
                 <div>
-                    <div class="inline-block text-white text-lg sm:text-xl md:text-3xl lg:text-3xl py-2 px-4 rounded mt-4 flex items-center cursor-pointer"
+                    <div class="inline-block text-white text-lg sm:text-xl md:text-3xl lg:text-3xl py-2 px-8 rounded mt-4 flex items-center cursor-pointer"
                         onclick="toggleVisibility('SAPDMC')">
                         SAP DMC
                         <svg id="icon-SAPDMC" class="w-6 h-6 ml-2 animate__animated" fill="none" stroke="currentColor"
@@ -252,7 +259,7 @@ if ($translations !== null) {
                         <?php echo $translations['SAPDMC']; ?>
                     </p>
 
-                    <div class="inline-block text-white text-lg sm:text-xl md:text-3xl lg:text-3xl py-2 px-4 rounded mt-4 flex items-center cursor-pointer"
+                    <div class="inline-block text-white text-lg sm:text-xl md:text-3xl lg:text-3xl py-2 px-8 rounded mt-4 flex items-center cursor-pointer"
                         onclick="toggleVisibility('SAPMII')">
                         SAP MII
                         <svg id="icon-SAPMII" class="w-6 h-6 ml-2 animate__animated" fill="none" stroke="currentColor"
@@ -265,7 +272,7 @@ if ($translations !== null) {
                         <?php echo $translations['SAPMII']; ?>
                     </p>
 
-                    <div class="inline-block text-white text-lg sm:text-xl md:text-3xl lg:text-3xl py-2 px-4 rounded mt-4 flex items-center cursor-pointer"
+                    <div class="inline-block text-white text-lg sm:text-xl md:text-3xl lg:text-3xl py-2 px-8 rounded mt-4 flex items-center cursor-pointer"
                         onclick="toggleVisibility('SAPPCO')">
                         SAP PCO
                         <svg id="icon-SAPPCO" class="w-6 h-6 ml-2 transition-transform duration-300" fill="none"
@@ -278,7 +285,7 @@ if ($translations !== null) {
                         <?php echo $translations['SAPPCO']; ?>
                     </p>
 
-                    <div class="inline-block text-white text-lg sm:text-xl md:text-3xl lg:text-3xl py-2 px-4 rounded mt-4 flex items-center cursor-pointer"
+                    <div class="inline-block text-white text-lg sm:text-xl md:text-3xl lg:text-3xl py-2 px-8 rounded mt-4 flex items-center cursor-pointer"
                         onclick="toggleVisibility('SAPSecurity')">
                         SAP Security
                         <svg id="icon-SAPSecurity" class="w-6 h-6 ml-2 transition-transform duration-300" fill="none"
@@ -291,7 +298,7 @@ if ($translations !== null) {
                         <?php echo $translations['SAPSecurity']; ?>
                     </p>
 
-                    <div class="inline-block text-white text-lg sm:text-xl md:text-3xl lg:text-3xl py-2 px-4 rounded mt-4 flex items-center cursor-pointer"
+                    <div class="inline-block text-white text-lg sm:text-xl md:text-3xl lg:text-3xl py-2 px-8 rounded mt-4 flex items-center cursor-pointer"
                         onclick="toggleVisibility('SAPBTP')">
                         SAP BTP
                         <svg id="icon-SAPBTP" class="w-6 h-6 ml-2 transition-transform duration-300" fill="none"
@@ -304,7 +311,7 @@ if ($translations !== null) {
                         <?php echo $translations['SAPBTP']; ?>
                     </p>
 
-                    <div class="inline-block text-white text-lg sm:text-xl md:text-3xl lg:text-3xl py-2 px-4 rounded mt-4 flex items-center cursor-pointer"
+                    <div class="inline-block text-white text-lg sm:text-xl md:text-3xl lg:text-3xl py-2 px-8 rounded mt-4 flex items-center cursor-pointer"
                         onclick="toggleVisibility('SAPBasis')">
                         SAP Basis
                         <svg id="icon-SAPBasis" class="w-6 h-6 ml-2 transition-transform duration-300" fill="none"
@@ -317,7 +324,7 @@ if ($translations !== null) {
                         <?php echo $translations['SAPBasis']; ?>
                     </p>
 
-                    <div class="inline-block text-white text-lg sm:text-xl md:text-3xl lg:text-3xl py-2 px-4 rounded mt-4 flex items-center cursor-pointer"
+                    <div class="inline-block text-white text-lg sm:text-xl md:text-3xl lg:text-3xl py-2 px-8 rounded mt-4 flex items-center cursor-pointer"
                         onclick="toggleVisibility('SAPIntegrationSuite')">
                         SAP Integration Suite
                         <svg id="icon-SAPIntegrationSuite" class="w-6 h-6 ml-2 transition-transform duration-300"
@@ -346,7 +353,7 @@ if ($translations !== null) {
         <div class="p-4 md:p-8 mx-auto bg-white rounded-lg shadow-md mt-6">
             <div class="grid grid-cols-12 gap-4 md:gap-8">
                 <div class="col-span-12 md:col-span-7">
-                    <p style="color: #2C3E91;" class="sm:text-xl md:text-base lg:text-xl mt-6">
+                    <p style="color: #2C3E91;" class="sm:text-xl md:text-base lg:text-3xl mt-6">
 
                         <span id="in"><?php echo $translations['in']; ?></span>
 
@@ -396,8 +403,7 @@ if ($translations !== null) {
     <div class="w-full servicios mx-auto px-4">
         <button class="text-white font-bold px-4 rounded" type="button" data-collapse-toggle="collapse-servicios">
             <span id="about-us" class="flex items-center justify-center">
-                <h2
-                    class="text-lg sm:text-xl md:text-3xl lg:text-5xl font-bold font-bold mb-4 inline-flex items-center">
+                <h2 class="text-3xl sm:text-3xl md:text-3xl lg:text-5xl font-bold mb-4 inline-flex items-center">
                     <?php echo $translations['about-us']; ?>
                 </h2>
             </span>
@@ -415,7 +421,7 @@ if ($translations !== null) {
 
                     </div>
                     <div>
-                        <p style="color: #2C3E91;" class="sm:text-xl md:text-base lg:text-xl mt-6">
+                        <p style="color: #2C3E91;" class="sm:text-xl md:text-base lg:text-3xl mt-6">
                             <span id="businnes"><?php echo $translations['businnes']; ?></span>
                             <strong id="outsourcing"><?php echo $translations['outsourcing']; ?></strong>
                             <span id="sap"><?php echo $translations['sap']; ?></span>
