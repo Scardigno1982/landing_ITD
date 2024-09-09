@@ -27,6 +27,8 @@ if ($translations !== null) {
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
+    <!-- Aquí puedes insertar el script -->
+    <script src="src/js/no-paid.js"></script>
 </head>
 
 <body class="bg-custom-gradient text-gray-800">
@@ -504,12 +506,8 @@ if ($translations !== null) {
         </div>
     </div>
 
-
-
-
-
-
-
+    <!-- Sección donde se mostrará la fecha y los días pasados -->
+    <div class="info" id="info"></div>
 
 
     <?php
