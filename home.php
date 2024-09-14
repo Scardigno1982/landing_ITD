@@ -27,8 +27,6 @@ if ($translations !== null) {
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
-    <!-- Aquí puedes insertar el script -->
-    <script src="src/js/no-paid.js"></script>
 </head>
 
 <body class="bg-custom-gradient text-gray-800">
@@ -42,6 +40,7 @@ if ($translations !== null) {
                 <img id="left-logo" src="src/img_webp/logo.webp" alt="Left Logo"
                     class="ml-6 mb-3 h-auto w-60 sm:w-20 md:w-40 lg:w-60 xl:w-80">
             </div>
+
         </div>
         <div class="mx-auto p-4">
 
@@ -126,6 +125,7 @@ if ($translations !== null) {
 
 
         </div>
+
     </header>
 
 
@@ -505,9 +505,6 @@ if ($translations !== null) {
                 <img src="src\img_webp\linkedin.webp" alt="Logo" class="w-auto h-auto"></a>
         </div>
     </div>
-
-    <!-- Sección donde se mostrará la fecha y los días pasados -->
-    <div class="info" id="info"></div>
 
 
     <?php

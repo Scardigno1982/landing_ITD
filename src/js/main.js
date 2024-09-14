@@ -3,6 +3,14 @@ document.getElementById('menu-button').addEventListener('click', function () {
     menu.classList.toggle('hidden');
 });
 
+// Función para cerrar el menú cuando se hace clic en un enlace.
+document.querySelectorAll('#menu a').forEach(function (link) {
+    link.addEventListener('click', function () {
+        var menu = document.getElementById('menu');
+        menu.classList.add('hidden'); // Cierra el menú al hacer clic en cualquier enlace
+    });
+});
+
 // Función para animar los números desde 0 hasta el valor objetivo.
 function animateNumber(element) {
     const target = parseInt(element.getAttribute('data-target'));
