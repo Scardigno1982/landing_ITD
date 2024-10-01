@@ -12,7 +12,7 @@ return [
     'icon1'=>'CLIENTS',
     'icon2'=>'PROJECTS',
     'icon3'=>'COUNTRIES',
-    'icon4'=>'YEARS OF EXPERIENCE',
+    'icon4'=>'YEARS',
     'service-container'=>'SERVICE',
     'service-subtitulo'=>'Consulting SAP Architecture:',
     'service-subtitulo-descripcion'=>'We offer specialist advice on the design and production of SAP system structure, ensuring a solid and efficient architecture that meets the requirements of the business objectives and requirements.',                     

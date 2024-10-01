@@ -66,7 +66,7 @@ if ($translations !== null) {
                     <li><a href="#home"
                             class="color-blanco hover:text-blue-600 font-semibold tracking-wide text-xl"><?php echo $translations['home']; ?></a>
                     </li>
-                    <li><a href="#service"
+                    <li><a href="#services"
                             class="color-blanco hover:text-blue-600 font-semibold tracking-wide text-xl"><?php echo $translations['service']; ?></a>
                     </li>
                     <li><a href="#technologies"
@@ -100,7 +100,7 @@ if ($translations !== null) {
                 <div class="flex space-x-6">
                     <a href="#home" class="color-blanco hover:text-blue-600 font-semibold tracking-wide text-xl">
                         <?php echo $translations['home']; ?></a>
-                    <a href="#service"
+                    <a href="#services"
                         class="color-blanco hover:text-blue-600 font-semibold tracking-wide text-xl"><?php echo $translations['service']; ?></a>
                     <a href="#technologies"
                         class="color-blanco hover:text-blue-600 font-semibold tracking-wide text-xl"><?php echo $translations['technologies']; ?></a>
@@ -131,6 +131,7 @@ if ($translations !== null) {
 
     <!-- //ANCHOR - HERO -->
     <div id="home" class="" style="margin-top: 174px;"></div>
+
     <div class="w-full bg-cover bg-center h-1/2 slider-hero" style="background-image: url('src/img_webp/slider.webp');">
         <div class="flex items-center justify-center h-full bg-black bg-opacity-20">
             <div class="text-center text-white px-2 sm:px-4 md:px-6 lg:px-8 xl:px-12">
@@ -149,7 +150,7 @@ if ($translations !== null) {
 
     <!-- //ANCHOR - ICONS -->
     <div class="w-full text-white py-6 md:py-10">
-        <div class="mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8 text-center">
+        <div class="mx-auto grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8 text-center">
             <div>
                 <img src="src/img_webp/icon1.webp" alt="Clientes"
                     class="w-16 sm:w-20 md:w-24 lg:w-28 mx-auto mb-2 sm:mb-4">
@@ -179,7 +180,9 @@ if ($translations !== null) {
 
 
     <!-- //ANCHOR - SERVICE -->
-    <div id="service-container"></div>
+    <div id="services"></div>
+
+
     <div class="w-full servicios mx-auto px-4 py-2 md:py-4">
         <button class="text-white font-bold py-2 px-4 rounded">
             <span id="service" class="flex items-center justify-center">
@@ -341,7 +344,7 @@ if ($translations !== null) {
                 </div>
                 <div class="flex justify-end">
                     <img src="src/img_webp/mini-hero.webp" alt="minihero"
-                        class="object-cover object-center w-full h-96">
+                        class="rounded object-cover object-center w-full h-96">
                 </div>
             </div>
         </div>

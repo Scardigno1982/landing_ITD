@@ -105,6 +105,15 @@ body {
         -ms-border-radius: 25px;
         -o-border-radius: 25px;
     }
+
+    #hero-text {
+        font-size: 30px;
+    }
+
+    #hero-text {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
 }
 
 /* Style the navbar */
