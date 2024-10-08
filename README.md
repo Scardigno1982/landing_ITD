@@ -4,9 +4,9 @@ Este proyecto es una demostración de mis habilidades como programador, en el cu
 
 ## Tecnologías Utilizadas
 
-- **PHP**: Para el backend de la aplicación.
-- **Tailwind CSS**: Para el diseño y la estética de la interfaz.
-- **AJAX**: Para el cambio dinámico de idioma sin recargar la página.
+-   **PHP**: Para el backend de la aplicación.
+-   **Tailwind CSS**: Para el diseño y la estética de la interfaz.
+-   **AJAX**: Para el cambio dinámico de idioma sin recargar la página.
 
 ## Funcionalidades Principales
 
@@ -17,5 +17,14 @@ Este proyecto es una demostración de mis habilidades como programador, en el cu
 ## Cómo Ejecutar el Proyecto
 
 1. Clonar el repositorio:
-   ```bash
-   git clone https://github.com/tu-usuario/tu-proyecto.git
+    ```bash
+    git clone https://github.com/Scardigno1982/landing_ITD
+    ```
+
+Autor: Sergio Scardigno
+Correo: sergioscardigno82@gmail.com
+Fecha de creación: 2024-10-08
+Última modificación: 2024-10-08
+Descripción: Descripción del archivo
+Versión: 1.0
+Si necesita realizar alguna modificación, no dude en contactarme.
