@@ -21,10 +21,11 @@ Este proyecto es una demostración de mis habilidades como programador, en el cu
     git clone https://github.com/Scardigno1982/landing_ITD
     ```
 
-**Autor:** Sergio Scardigno
-**Correo:** sergioscardigno82@gmail.com
-**Fecha de creación:** 2024-10-08
-**Última modificación:** 2024-10-08
-**Descripción:** Pagina web de ITD
+**Autor:** Sergio Scardigno  
+**Correo:** sergioscardigno82@gmail.com  
+**Fecha de creación:** 2024-10-08  
+**Última modificación:** 2024-10-08  
+**Descripción:** Página web de ITD  
 **Versión:** 1.0
+
 Si necesita realizar alguna modificación, no dude en contactarme.
