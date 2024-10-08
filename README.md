@@ -21,6 +21,8 @@ Este proyecto es una demostración de mis habilidades como programador, en el cu
     git clone https://github.com/Scardigno1982/landing_ITD
     ```
 
+---
+
 **Autor:** Sergio Scardigno  
 **Correo:** sergioscardigno82@gmail.com  
 **Fecha de creación:** 2024-10-08  
